@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -123,11 +124,11 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                    &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
-                                                                    &mkp LCLK
+&kp F1      &kp F2             &kp F3           &kp F4          &kp F5            &kp F6           &kp F7           &kp F7                &kp F8                &kp F9      &kp F10     &kp F11          &kp F12
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_FORWARD    &mmv MOVE_DOWN   &kt C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &mkp MCLK   &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans      &sys_reset         &trans           &bootloader     &trans            &mkp MB5         &mmv MOVE_LEFT   &bootloader           &trans                &sys_reset  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                               &kp C_MUTE       &trans          &trans            &trans           &mmv MOVE_RIGHT  &trans                &trans                &trans
+                                                                                                   &mkp LCLK
             >;
 
             label = "FN";
