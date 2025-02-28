@@ -90,7 +90,7 @@
 
             bindings = <
 &kp C_VOLUME_UP    &kp N1           &kp N2           &kp N3           &kp N4           &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&td0               &bt BT_CLR_ALL   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&td0               &trans           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &kp C_VOLUME_DOWN  &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                     &kp C_MUTE       &trans           &trans           &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
                                                                                                           &mkp LCLK
@@ -111,7 +111,7 @@
 
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                       &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
                                                                        &mkp LCLK
@@ -124,9 +124,9 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp F1      &kp F2             &kp F3           &kp F4          &kp F5            &kp F6           &kp F7           &kp F7                &kp F8                &kp F9      &kp F10     &kp F11          &kp F12
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_FORWARD    &mmv MOVE_DOWN   &kt C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &mkp MCLK   &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans      &sys_reset         &trans           &bootloader     &trans            &mkp MB5         &mmv MOVE_LEFT   &bootloader           &trans                &sys_reset  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&kp F1      &kp F2             &kp F3           &kp F4          &kp F5            &kp F6           &kp F7           &kp F7                &kp F8                &kp F9       &kp F10     &kp F11          &kp F12
+&kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_FORWARD    &mmv MOVE_DOWN   &kt C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans      &sys_reset         &sys_reset       &bootloader     &trans            &mkp MB5         &mmv MOVE_LEFT   &bt BT_CLR_ALL        &trans                &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                &kp C_MUTE       &trans          &trans            &trans           &mmv MOVE_RIGHT  &trans                &trans                &trans
                                                                                                    &mkp LCLK
             >;
